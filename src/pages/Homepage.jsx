@@ -499,7 +499,7 @@ constraints:
               transition={{ duration: 0.5 }}
               className="text-3xl md:text-4xl font-bold mb-6"
             >
-              See It In Action!
+              Want To See It In Action?
             </motion.h2>
             <p className="text-xl text-slate-300">
               See the control layer in action—from specification to optimized configurations.
