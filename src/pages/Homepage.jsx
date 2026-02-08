@@ -695,6 +695,11 @@ def answer_question(question: str) -> str:
                     Request SDK access
                   </a>
                 </li>
+                <li>
+                  <Link to="/one-pager" className="text-slate-400 hover:text-white transition-colors">
+                    1-pager
+                  </Link>
+                </li>
               </ul>
             </div>
 
