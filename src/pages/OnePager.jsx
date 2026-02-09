@@ -101,7 +101,7 @@ export default function OnePager() {
               <p className="text-slate-300">
                 <a href="mailto:nimrod@traigent.ai" className="text-indigo-400 hover:underline">nimrod@traigent.ai</a>
                 {" | "}
-                <a href="https://www.linkedin.com/in/nimrod-busany-phd-0b938216/" target="_blank" rel="noopener noreferrer" className="text-indigo-400 hover:underline">LinkedIn</a>
+                <a href="https://linkedin.com/in/nimrodbusany" target="_blank" rel="noopener noreferrer" className="text-indigo-400 hover:underline">LinkedIn</a>
               </p>
               <p className="text-slate-400">+972-54-4553811</p>
             </div>
