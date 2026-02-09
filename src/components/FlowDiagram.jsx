@@ -15,34 +15,33 @@ export default function FlowDiagram({ variant = "light" }) {
 
   return (
     <div className="relative">
-      <div className="grid grid-cols-1 md:grid-cols-7 gap-4 items-center">
+      <div className="grid grid-cols-1 md:grid-cols-11 gap-2 items-stretch">
         {/* Input Box */}
-        <div className={`md:col-span-2 ${boxBg} rounded-xl p-5 border border-slate-700`}>
-          <div className="flex items-center gap-2 mb-3">
-            <div className="w-8 h-8 bg-blue-500/20 rounded-lg flex items-center justify-center">
-              <span className="text-blue-400 text-lg">📥</span>
-            </div>
-            <h4 className="font-bold text-white">Input</h4>
-          </div>
+        <div className={`md:col-span-4 ${boxBg} rounded-xl p-5 border border-slate-700`}>
+          <h4 className="font-bold text-white mb-3">Input: <span className="text-blue-300">The Tunable Universe</span></h4>
           <ul className="space-y-2 text-sm">
-            <li className="flex items-center gap-2 text-slate-300">
-              <span className="w-1.5 h-1.5 bg-blue-400 rounded-full"></span>
-              Prompts & Models
+            <li className="flex items-start gap-2 text-slate-300">
+              <span className="w-1.5 h-1.5 bg-blue-400 rounded-full mt-1.5 flex-shrink-0"></span>
+              <span><strong className="text-white">Agent Blueprint:</strong> Initial logic, prompts, and tool definitions.</span>
             </li>
-            <li className="flex items-center gap-2 text-slate-300">
-              <span className="w-1.5 h-1.5 bg-blue-400 rounded-full"></span>
-              Eval Data & KPIs
+            <li className="flex items-start gap-2 text-slate-300">
+              <span className="w-1.5 h-1.5 bg-blue-400 rounded-full mt-1.5 flex-shrink-0"></span>
+              <span><strong className="text-white">Optimization Goal:</strong> Your EvalSet (.jsonl) and KPI weights.</span>
+            </li>
+            <li className="flex items-start gap-2 text-slate-300">
+              <span className="w-1.5 h-1.5 bg-blue-400 rounded-full mt-1.5 flex-shrink-0"></span>
+              <span><strong className="text-white">Search Space:</strong> Massive N-dimensional grid (Models × RAG × ... × <em>k</em> × Temp).</span>
             </li>
           </ul>
         </div>
 
         {/* Arrow 1 */}
-        <div className="hidden md:flex justify-center">
+        <div className="hidden md:flex justify-center items-center">
           <ArrowRight className={`w-6 h-6 ${arrowColor1}`} />
         </div>
 
         {/* Center - Traigent Engine */}
-        <div className="md:col-span-1 flex justify-center">
+        <div className="md:col-span-1 flex justify-center items-center">
           <div className="relative">
             {isDark ? (
               <div className="w-24 h-24 flex items-center justify-center">
@@ -64,26 +63,25 @@ export default function FlowDiagram({ variant = "light" }) {
         </div>
 
         {/* Arrow 2 */}
-        <div className="hidden md:flex justify-center">
+        <div className="hidden md:flex justify-center items-center">
           <ArrowRight className={`w-6 h-6 ${arrowColor2}`} />
         </div>
 
         {/* Output Box */}
-        <div className={`md:col-span-2 ${boxBg} rounded-xl p-5 border border-emerald-500/30`}>
-          <div className="flex items-center gap-2 mb-3">
-            <div className="w-8 h-8 bg-emerald-500/20 rounded-lg flex items-center justify-center">
-              <span className="text-emerald-400 text-lg">📤</span>
-            </div>
-            <h4 className="font-bold text-white">Output</h4>
-          </div>
+        <div className={`md:col-span-4 ${boxBg} rounded-xl p-5 border border-emerald-500/30`}>
+          <h4 className="font-bold text-white mb-3 whitespace-nowrap">Output: <span className="text-emerald-300">The Safest Implementation</span></h4>
           <ul className="space-y-2 text-sm">
-            <li className="flex items-center gap-2 text-slate-300">
-              <span className="w-1.5 h-1.5 bg-emerald-400 rounded-full"></span>
-              Optimized Configs
+            <li className="flex items-start gap-2 text-slate-300">
+              <span className="w-1.5 h-1.5 bg-emerald-400 rounded-full mt-1.5 flex-shrink-0"></span>
+              <span><strong className="text-white">Optimal Config:</strong> The mathematically best-performing implementation.</span>
             </li>
-            <li className="flex items-center gap-2 text-slate-300">
-              <span className="w-1.5 h-1.5 bg-emerald-400 rounded-full"></span>
-              Evidence-backed Reports
+            <li className="flex items-start gap-2 text-slate-300">
+              <span className="w-1.5 h-1.5 bg-emerald-400 rounded-full mt-1.5 flex-shrink-0"></span>
+              <span><strong className="text-white">Validated KPI:</strong> Proven accuracy, speed, and cost efficiency.</span>
+            </li>
+            <li className="flex items-start gap-2 text-slate-300">
+              <span className="w-1.5 h-1.5 bg-emerald-400 rounded-full mt-1.5 flex-shrink-0"></span>
+              <span><strong className="text-white">Evidence Report:</strong> Full trial history and KPI validation data.</span>
             </li>
           </ul>
         </div>
